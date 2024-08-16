@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linked List Insert</title>
+    <title>Traversing Linked List</title>
 </head>
 
 <body>
+
     <script>
         class List {
             constructor(data) {
@@ -28,12 +29,18 @@
                 this.tail = newNode;
                 this.size++;
             }
+            traversing() {
+                let counter = 0;
+
+            }
         }
 
         let list = new List(200);
         list.appendNode(300);
         list.appendNode(400)
         list.appendNode(500)
+        list.appendNode(500)
+        list.traversing();
         console.log(list);
         // Sallow copy
         // let x = { name: "anil" };
